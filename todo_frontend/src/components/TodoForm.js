@@ -30,7 +30,7 @@ export function TodoForm({ onAdd }) {
         placeholder="Type a task and hit Enter…"
         autoComplete="off"
       />
-      <button className="btn" type="submit">
+      <button className="btn" type="submit" disabled={!text.trim()}>
         Add
       </button>
     </form>
